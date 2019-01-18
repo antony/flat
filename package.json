@@ -2,20 +2,21 @@
   "name": "flatley",
   "version": "5.2.0",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "mocha -u tdd --reporter spec && standard index.js test/index.js"
   },
   "license": "BSD-3-Clause",
   "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys",
   "devDependencies": {
-    "mocha": "^4.0.1",
-    "standard": "^10.0.3"
+    "mocha": "~5.2.0",
+    "standard": "^11.0.1"
   },
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "is-buffer": "^1.1.6"
+    "is-buffer": "~2.0.3"
   },
   "repository": {
     "type": "git",
