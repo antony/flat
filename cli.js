@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const flat = require('.')
+const flatley = require('.')
 const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
@@ -24,15 +24,15 @@ if (process.stdin.isTTY) {
 }
 
 function out (data) {
-  process.stdout.write(JSON.stringify(flat(data), null, 2))
+  process.stdout.write(JSON.stringify(flatley(data), null, 2))
 }
 
 function usage () {
   console.log(`
 Usage:
 
-flat foo.json
-cat foo.json | flat
+flatley foo.json
+cat foo.json | flatley
 `)
 
   process.exit()

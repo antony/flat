@@ -225,23 +225,23 @@ flatten({
 [`npx`](https://ghub.io/npx):
 
 ```sh
-npx flat foo.json
+npx flatley foo.json
 ```
 
-Or install the `flat` command globally:
+Or install the `flatley` command globally:
  
 ```sh
-npm i -g flat && flat foo.json
+npm i -g flatley && flatley foo.json
 ```
 
 Accepts a filename as an argument:
 
 ```sh
-flat foo.json
+flatley foo.json
 ```
 
 Also accepts JSON on stdin:
 
 ```sh
-cat foo.json | flat
+cat foo.json | flatley
 ```
